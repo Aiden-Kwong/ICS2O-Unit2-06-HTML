@@ -2,42 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Contains coloured text, an image and a table with ID">
+    <meta name="description" content="Contains a list, table and colored text">
     <meta name="author" content="Aiden K.">
     <meta name="viewport" content="width=device-width">
     <title>HTML tags: ID</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       #first-header {
-        background-color: DodgerBlue;
+        background-color: Orange;
         color: black;
         font-family: Verdana;
         text-align: center;
       }
       #my-paragraph {
-        background-color: LightGray;
-        color: DodgerBlue;
+        background-color: Gray;
+        color: Orange;
         font-family: Courier New;
         text-align: left;
       }
-      #local-image {
+      #list {
+        background-color: Gray;
+        color: Orange;
+        font-family: Courier New;
+        text-align: left;
       }
       #table {
-        background-color: White;
+        background-color: Orange;
         color: black;
         font-family: Verdana;
         text-align: center;
       }
     </style>
   </head>
-  <body style="background-color:LightGray">
+  <body style="background-color:Gray">
     <script src="script.js"></script>
     <h3 id="first-header">This is a header</h3>
-    <p id="my-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <hr>
-    <img id="local-image" src="./images/test-image-400x214.jpg" alt="Field" width="400" height="214">
-    <hr>
-    <table id="table">
+    <div id="list">
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+    </div>
+    <div id="table">
+    <table>
       <tr>
         <th>Column 1</th>
         <th>Column 2</th>
@@ -54,5 +62,9 @@
         <td>Row2 Column3</td> 
       </tr>
     </table>
+    </div>
+    <div id="my-paragraph">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
   </body>
 </html>
